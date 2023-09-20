@@ -16,7 +16,19 @@ const x3 = 3;
 const x4 = 4;
 const x5 = 5;
 
-
 console.log(x5);
 console.log(pinigine);
 console.log(amzius);
+
+const n1 = 7;
+const n2 = 5;
+
+const sum = n1 + n2;
+const diff = n1-n2;
+const div=n1-n2;
+const complex=(2+2)*2;
+
+console.log("Suma: ", sum);
+console.log(diff);
+console.log(complex);
+console.log("aaa");
