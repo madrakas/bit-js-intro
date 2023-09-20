@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "number": "nodemon ./kintamieji/number.js",
-=======
     "dev": "nodemon ./kintamieji/number.js",
->>>>>>> d1623f8beb29e45a056ba515a4a0d76a8d9c7c48
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
