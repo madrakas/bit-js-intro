@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "array": "nodemon ./kintamieji/array.js",
+    "boolean": "nodemon ./kintamieji/boolean.js",
     "number": "nodemon ./kintamieji/number.js",
     "string": "nodemon ./kintamieji/string.js",
     "test": "echo \"Error: no test specified\" && exit 1"
