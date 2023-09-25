@@ -39,4 +39,61 @@ const stud4 = ["Ona", "Onaitienė"];
 const class1 = [stud1, stud2];
 const Class2 = [stud3, stud4];
 const students = [class1,Class2];
-console.log(students[0][1][0], students[1][1][0]);
+//console.log(students[0][1][0], students[1][1][0]);
+//console.log(students);
+
+const marks = [10, 2, 8, 4, 6];
+//const marksSum = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+let marksSum = 0;
+
+// marksSum = marksSum + marks[0];
+marksSum += marks[0];
+marksSum += marks[1];
+marksSum += marks[2];
+marksSum += marks[3];
+marksSum += marks[4];
+
+const marksAverage = marksSum / marks.length;
+const studentmarks = `Studento pažymių vidurkis yra ${marksAverage}`;
+console.log(marksAverage);
+console.log(marks.ilgis);
+marksSum = 'Testas';
+console.log(marksSum);
+
+let placesStr = '';
+placesStr += v[0];
+placesStr += ', ';
+placesStr += v[1];
+placesStr += ', ';
+placesStr += v[2]
+
+console.log(`Mano aplankytos vietos: ${placesStr}`);
+
+console.clear();
+
+const colors  = ['geltona', 'zalia', 'raudona'];
+
+console.log(colors);
+console.log(colors[1]);
+
+colors[1] = 777;
+console.log(colors);
+
+colors[1] = 'žalia';
+console.log(colors);
+
+
+let name = 'Chuck';
+console.log(name[0]);
+console.log(name[1]);
+console.log(name[2]);
+console.log(name[3]);
+console.log(name[4]);
+
+console.log(name.length);
+
+name[0] = 'H';
+console.log (name); // vis tiek outputas bus Chack
+
+name = "Hhuck";
+console.log (name); // Outputas bus Hhack
