@@ -112,15 +112,15 @@ console.clear();
 
 
 // reikia užbaigti
-const parosMetas0 = 'diena';
+const parosMetas0 = 'naktis';
 const arLyja0 = false;
-const temp0 = 25;
+const temp0 = -50;
 const kadaSilta0 = 20;
 const arAsSuStriuke0 = false;
-const savaitesDiena0 = 6;
+const savaitesDiena0 = 1;
 
 kaVeikti(parosMetas0, arLyja0, temp0, kadaSilta0, arAsSuStriuke0, savaitesDiena0);
-kaVeikti(parosMetas0, arLyja0, temp0, kadaSilta0, arAsSuStriuke0, savaitesDiena0);
+kaVeikti2(parosMetas0, arLyja0, temp0, kadaSilta0, arAsSuStriuke0, savaitesDiena0);
 
 function kaVeiktiErrorCheck(parosMetas, arLyja, temp, kadaSilta, arAsSuStriuke, savaitesDiena){
     let err = false;
@@ -301,8 +301,53 @@ function kaVeikti2 (parosMetas, arLyja, temp, kadaSilta, arAsSuStriuke, savaites
         if (parosMetas0 === 'diena') {
             //Diena
             if (arLyja){
-                //lyja
-                if (temp < kadaSilta){
+              //lyja
+                if (temp >= kadaSilta){
+                    //šilta
+                    if (arAsSuStriuke){
+                        //Striukė
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Į žvejybą");
+                            }else{
+                            //darbo diena
+                            console.log("Į darbą su autobusu");
+                            }
+                    }else{
+                        //Be striukės
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Šokis lietuje");
+                        }else{
+                            //darbo diena
+                            console.log("Su mašina į darbą");
+                        }
+                    }
+                }else{
+                    //šalta
+                    if (arAsSuStriuke){
+                        //Striukė
+                        if ((savaitesDiena >= 6) && (savaitesDiena < 8)) {
+                            //Savaitgalis
+                            console.log("Turbūt bulviakasis");
+                        }else{
+                            //darbo diena
+                            console.log("Į darbą su paspirtuku");
+                        }
+                    }else{
+                        //Be striukės
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Prie TV");
+                        }else{
+                            //darbo diena
+                            console.log("Pati liūdniausia diena");
+                        }
+                    }
+                }
+            }else{
+                  //lyja
+                  if (temp >= kadaSilta){
                     //šilta
                     if (arAsSuStriuke){
                         //Striukė
@@ -345,104 +390,12 @@ function kaVeikti2 (parosMetas, arLyja, temp, kadaSilta, arAsSuStriuke, savaites
                         }
                     }
                 }
-            }else{
-                //nelyja
-                if (temp < kadaSilta){
-                    //šilta
-                    if (arAsSuStriuke){
-                        //Striukė
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Į žvejybą");
-                        }else{
-                            //darbo diena
-                            console.log("Į darbą su autobusu");
-                        }
-                    }else{
-                        //Be striukės
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Šokis lietuje");
-                        }else{
-                            //darbo diena
-                            console.log("Su mašina į darbą");
-                        }
-                    }
-                }else{
-                    //šalta
-                    if (arAsSuStriuke){
-                        //Striukė
-                        if ((savaitesDiena >= 6) && (savaitesDiena < 8)) {
-                            //Savaitgalis
-                            console.log("Turbūt bulviakasis");
-                        }else{
-                            //darbo diena
-                            console.log("Į darbą su paspirtuku");
-                        }
-                    }else{
-                        //Be striukės
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Prie TV");
-                        }else{
-                            //darbo diena
-                            console.log("Pati liūdniausia diena");
-                        }
-                    }
-                }
-
             }
         }else{
             //naktis
-
             if (arLyja){
                 //lyja
-                if (temp < kadaSilta){
-                    //šilta
-                    if (arAsSuStriuke){
-                        //Striukė
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Į gamtą. Striukė bus vietoje palapinės");
-                        }else{
-                            //darbo diena
-                            console.log("Šokiai su striukėmis");
-                        }
-                    }else{
-                        //Be striukės
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Pati nuostabiausia naktis");
-                        }else{
-                            //darbo diena
-                            console.log("Pati linksmiausia darbadienio naktis");
-                        }
-                    }
-                }else{
-                    //šalta
-                    if (arAsSuStriuke){
-                        //Striukė
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Gerai matysis žvaigždės ir neušalsiu");
-                        }else{
-                            //darbo diena
-                            console.log("Galima prasieiti lauke prieš miegą");
-                        }
-                    }else{
-                        //Be striukės
-                        if (savaitesDiena >= 6 && savaitesDiena < 8){
-                            //Savaitgalis
-                            console.log("Shopping");
-                        }else{
-                            //darbo diena
-                            console.log("Namie su knyga");
-                        }
-                    }
-                }
-            }else{
-                //nelyja
-                if (temp < kadaSilta){
+                if (temp >= kadaSilta){
                     //šilta
                     if (arAsSuStriuke){
                         //Striukė
@@ -485,11 +438,56 @@ function kaVeikti2 (parosMetas, arLyja, temp, kadaSilta, arAsSuStriuke, savaites
                         }
                     }
                 }
-
+            }else{
+                //nelyja
+                if (temp >= kadaSilta){
+                    //šilta
+                    if (arAsSuStriuke){
+                        //Striukė
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Į gamtą. Striukė bus vietoje palapinės");
+                        }else{
+                            //darbo diena
+                            console.log("Šokiai su striukėmis");
+                        }
+                    }else{
+                        //Be striukės
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Pati nuostabiausia naktis");
+                        }else{
+                            //darbo diena
+                            console.log("Pati linksmiausia darbadienio naktis");
+                        }
+                    }
+                }else{
+                    //šalta
+                    if (arAsSuStriuke){
+                        //Striukė
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Gerai matysis žvaigždės ir neušalsiu");
+                        }else{
+                            //darbo diena
+                            console.log("Galima prasieiti lauke prieš miegą");
+                        }
+                    }else{
+                        //Be striukės
+                        if (savaitesDiena >= 6 && savaitesDiena < 8){
+                            //Savaitgalis
+                            console.log("Shopping");
+                        }else{
+                            //darbo diena
+                            console.log("Namie su knyga");
+                        }
+                    }
+                }
             }
         }
     }
-    console.log('monster2Start');
+    console.log('parosMetas', parosMetas, 'arLyja', arLyja, 'temp',  temp, 'kadaSilta', kadaSilta, 'arAsSuStriuke', arAsSuStriuke, 'savaitesDiena', savaitesDiena);
+    console.log('monster2End');
 } //kaVeikt2 funkcijos pabaiga
 
 
@@ -541,3 +539,28 @@ if  (w > e) {
 } else {
     console.log((`${w} yra maziau arba lygu  ${e}`));
 } */
+
+function arLyginis(skaicius){
+    // klaidų prevencija
+    if ((typeof skaicius === 'number') && skaicius !== Infinity && skaicius !== -Infinity && skaicius !== undefined) {
+        // skaičius
+        // ar sveikas
+        if ((skaicius%1) !==0){
+            return `${skaicius} - ne sveikas skaičius`;
+        } else {
+            // sveikas skaičius. Ar lyginis?
+            if ((skaicius%2) !== 0){
+                return `${skaicius} - nelyginis skaičius`;
+            }else{
+                return `${skaicius} - lyginis skaičius`;
+            }
+        }
+    }else{
+        // ne skaičius
+        return 'ne skaičius';
+    }
+}
+
+console.log(arLyginis(52));
+
+//console.log(NaN === NaN);
