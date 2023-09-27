@@ -71,14 +71,12 @@ const skaicius = 17;
 const daliklis = 5;
 const remain = skaicius % daliklis;
 console.log(remain);
-const sveikaDalis = (skaicius - remain) / daliklis;
-console.log(sveikaDalis);
+const sveikaDalis = (skaicius - remain)/ daliklis;
+console.log('sveika dalis', sveikaDalis, 'Liekana', remain);
 
- //console.log(sveikaDalis, '*', daliklis, "")
-
+console.log(sveikaDalis, '*', daliklis, '+', remain, '=', skaicius);
 
  console.clear();
-
  let index = 0;
  console.log('index: ', index);
 
@@ -137,14 +135,21 @@ console.log(sveikaDalis);
 x += -1;
 console.log(x);
 
-let a1 = 5;
-x= 7;
+x= 5;
+const a1 = 2;
 
 //x = x + ++a1; //13
 //x = x++ +a1;   //12
 
 //x = (x++) + a1; //12 x1 = 8
-x = x + (++a1);  //13 x1 = 8
+//x = x + (++a1);  //13 x1 = 8
 
+// console.log(x);
 
+//   5+1  + 2
+//x = ++x + a1; // 8
+
+//    5     + 2 
+x = (x++) + a1; // 7
 console.log(x);
+

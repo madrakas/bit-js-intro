@@ -100,3 +100,10 @@ console.log(n6);
 const n7 = '5' - '7';
 console.log(n7);
 
+//const STRANGE_STRING = "\u0130;";
+const STRANGE_STRING = "İ";
+
+const upDownLen = STRANGE_STRING.toUpperCase().toLowerCase().length;
+const oriLen = STRANGE_STRING.length;
+
+console.log('oriLen', oriLen, 'upDownLen',upDownLen, 'diff', upDownLen - oriLen);

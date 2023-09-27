@@ -1,4 +1,4 @@
-
+/* Arrays */
 
 const tuscias = [];
 console.log(tuscias)
@@ -97,3 +97,4 @@ console.log (name); // vis tiek outputas bus Chack
 
 name = "Hhuck";
 console.log (name); // Outputas bus Hhack
+
