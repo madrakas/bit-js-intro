@@ -2,8 +2,13 @@
   "name": "js-intro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./kintamieji/index.js",
   "scripts": {
+
+    "metstring": "nodemon ./metodai/string.js", 
+    "metnumber": "nodemon ./metodai/number.js", 
+    "cw": "nodemon ./cw/013.js",
+    "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palyginimas/if.js",
     "function" : "nodemon ./funkcijos/function.js",
     "object" : "nodemon ./kintamieji/object.js",
