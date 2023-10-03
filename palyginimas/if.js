@@ -564,3 +564,42 @@ function arLyginis(skaicius){
 console.log(arLyginis(52));
 
 //console.log(NaN === NaN);
+
+console.clear();
+
+const g = 7;
+const h = 5;
+
+if (g !== h) {
+    console.log('Ne lygu');
+} else {
+    console.log('Lygu');
+}
+
+console.clear();
+
+// !== vs !=
+// === vs ==
+
+if (7 === 7) {
+    console.log('aaaaaaaa');
+} else {
+    console.log('bbbbbbbbb');
+}
+
+const w = 'aaaaaaaaaa';
+const e = 'abba';
+
+if (w > e) {
+    console.log(`"${w}" yra daugiau uz "${e}"`);
+} else {
+    console.log(`"${w}" yra maziau arba lygu uz "${e}"`);
+}
+
+// !true
+// !false
+if (!true) {
+    console.log('gg');
+} else {
+    console.log('fail...');
+}
