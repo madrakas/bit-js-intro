@@ -117,6 +117,7 @@ console.log(r6); // L_b_s
 
 
 
+
 console.log('\n\r\n\r######  10-03   #####\n\r');
 
 const kopustas = 'kopustas';
@@ -125,7 +126,22 @@ console.log(kopustas.slice(-6));
 console.log(kopustas.slice(-3));
 console.log('----' + kopustas.slice(-6, -3));
 
-// console.clear();
+const pvz ="Labas rytas suraitytas";
+console.log(pvz.split('x')); // ['Labas rytas suraitytas']
+console.log(pvz.split('a')); //[ 'L', 'b', 's ryt', 's sur', 'ityt', 's' ]
+console.log(pvz.split(' ')); //[ 'Labas', 'rytas', 'suraitytas' ]   
+
+const pvz2  = 'vasara';
+const pvz2PoSplit = pvz2.split('a');
+console.log(pvz2PoSplit); //[ 'v', 's', 'r', '' ]
+
+console.log('------------');
+console.log(''.split('x')); // -> [ '' ]
+console.log('asd'.split('asd'));  // -> [ '', '' ]
+console.log(''.split('')); // -> []
+
+
+//console.clear();
 
 console.log('Labas'.startsWith('x'));  //false
 console.log('Labas'.startsWith('l'));  //false
@@ -135,25 +151,28 @@ console.log('Labas'.startsWith('Labs'));  //false
 console.log('Labas'.startsWith('Labas'));  //true
 console.log(''.startsWith(''));  //true
 
-// console.clear();
+console.clear();
 
-console.log('Vasra'.endsWith('x'));  //false
-console.log('Vasra'.endsWith('A'));  //false
-console.log('Vasra'.endsWith('a'));  //true
-console.log('Vasra'.endsWith('sa'));  //false
-console.log('Vasra'.endsWith('ra'));  //true
-console.log('Vasra'.endsWith('sara'));  //false
-console.log('Vasra'.endsWith('vasara'));  //false
-console.log('Vasra'.endsWith('Vasara'));  //false
-console.log(''.endsWith(''));  //true
+console.log('Vasara'.endsWith('x'));   //false
+console.log('Vasara'.endsWith('A'));   //false
+console.log('Vasara'.endsWith('a'));  //true
+console.log('Vasara'.endsWith('sa'));   //false
+console.log('Vasara'.endsWith('ra'));  //true
+console.log('Vasara'.endsWith('sara'));   //true
+console.log('Vasara'.endsWith('vasara'));   //false
+console.log('Vasara'.endsWith('Vasara'));   //true
+console.log(''.endsWith(''));               //true
 
-// console.clear();
+//console.clear();
 
 const pasaka = 'Ryto pasala apei Jonuka ir Gretute';
 const paskaUpercase = pasaka.toUpperCase();
 const paskaLowercase = pasaka.toLowerCase();
 console.log(paskaUpercase); //RYTO PASALA APEI JONUKA IR GRETUTE  
 console.log(paskaLowercase); //ryto pasala apei jonuka ir gretute 
+console.log('Labas'.toLowerCase()); // -> labas
+console.log('Labas'.toUpperCase()); // -> LABAS
+
 
 // console.clear();
 

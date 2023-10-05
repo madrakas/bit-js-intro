@@ -74,8 +74,6 @@ console.log(looksLikeName('Eg_le'), false);
 
 
 
-
-
 console.clear ();
 
 function isName(name){
@@ -135,6 +133,7 @@ console.log(isName('L'));
 console.log(isName('Li'));
 console.log(isName('Liasdasdasdsadasdsadasd'));
  */
+
 console.log(isName('MarytE'));
 console.log(isName('OnA'));
 console.log(isName('PEtras'));

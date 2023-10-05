@@ -37,10 +37,13 @@ console.log(a123);
 console.log(a124);
 console.log(a1245);
 console.log(a12445); //[1,  2, 3, 4, 5, 6,  7, 8, 7, 8, 9, 10]
-  
+
+console.log('------------');
+console.log([1,2].concat([3,4], [5,6], [7,8])); // <- [1, 2, 3, 4, 5, 6, 7, 8]
+
 
 //indexOf, include
-console.clear();
+//console.clear();
 
 //                    0       1         2       3
 const students =["Jonas", "Petras", "Maryte", "Chuck"];
@@ -88,5 +91,49 @@ console.log(abcJoin4, typeof abcJoin);
 //push
 
 
-console.clear();
+//console.clear();
 const flowers = ['kardelis'];
+console.log(flowers);
+
+flowers.push('roze');
+console.log(flowers);
+
+flowers.push('tulpe');
+console.log(flowers);
+
+flowers.pop();
+console.log(flowers);
+
+flowers.push('tulpe');
+console.log(flowers);
+
+flowers.shift('tulpe'); 
+console.log(flowers); // [ 'kardelis', 'roze', 'tulpe' ]  -> [ 'roze', 'tulpe' ]
+
+flowers.push('tulpe');
+console.log(flowers);
+
+flowers.unshift('tulpe'); 
+console.log(flowers); // [ 'kardelis', 'roze', 'tulpe' ]  -> [ 'tulpe', 'roze', 'tulpe', 'tulpe' ]
+
+//console.clear();
+console.log(flowers.reverse());
+
+// slice
+
+//console.clear();
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const numbers46 = numbers.slice(4,6); //startas neimtinai, pabaiga imtinai
+const numbers4 = numbers.slice(4);
+const numbers25 = numbers.slice(2,5); 
+console.log(numbers4);
+console.log((numbers46));
+console.log((numbers25));
+
+// splice 
+//numbers.splice(3);
+numbers.splice(3, 3, 11, 12, 13, 14, 15); // [1, 2, 3, 4, 5, 6, 7, 8, 9] => [1, 2, 3, 11, 12, 13, 14, 15, 7, 8, 9]
+console.log(numbers); // nuo kur pradėti, kiek trint, elementai įterpimui nuo kur pradėjom
+
