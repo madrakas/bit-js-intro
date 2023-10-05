@@ -16,7 +16,7 @@
     "number": "nodemon ./kintamieji/number.js",
     "string": "nodemon ./kintamieji/string.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw/020.js",
+    "cw": "nodemon ./cw/026.js",
     "uzd": "nodemon ./uzd/pazymiai.js"
   },
   "keywords": [],
