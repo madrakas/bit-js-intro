@@ -25,7 +25,7 @@ const svoris2 = 85;
 
 const dalmuo = (a, b) => a /b;
 
-const kmi = (svoris, ugis) => (svoris / ugis ** 2).toFixed(2);
+const kmi = +((svoris, ugis) => (svoris / ugis ** 2).toFixed(2));
 
 const kmi1 = kmi (svoris1, ugis1);
 const kmi2 = kmi (svoris2, ugis2);
@@ -52,13 +52,14 @@ function arbitras(a1, a2, a3, b1, b2, b3){
         if (v1 >= 100){
             return (`delfinai laimėjo ${v1} > ${v2}`);
         } else {
-            return (`niekas nelaimėjo ${v1} > ${v2}`);
+            return (`niekas nelaimėjo ${v1} < 100`);
         }
         
     } else if(v2 < v1){
-        if (v2 >=100 ){
+        if (v2 >= 100 ){
+            return (`koalos laimėjo ${v2} > ${v1}`);
         } else {
-            return (`delfinai laimėjo ${v2} > ${v1}`);
+            return (`niekas nelaimėjo ${v2} < 100`);
         }
     } else {
         return (`lygiosios ${v1} = ${v2}`);
@@ -68,3 +69,4 @@ function arbitras(a1, a2, a3, b1, b2, b3){
 
 console.log('1: ' + arbitras(96, 108, 89, 88, 91, 110));
 console.log('2: ' + arbitras(97, 112, 101, 109, 95, 106));
+
