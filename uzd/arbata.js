@@ -20,8 +20,7 @@ Bandymo duomenys:
 console.clear();
 
 function buhalteris (saskaita){
-    let arbata = saskaita / 100;
-    arbata = saskaita >= 50 || saskaita <= 300 ? (arbata * 15).toFixed(2) : (arbata * 20).toFixed(2);
+    const arbata = saskaita >= 50 || saskaita <= 300 ? (saskaita * 15)/100 : (saskaita * 20)/100;
     return (`Sąskaita buvo ${saskaita}, arbatpinigiai ${arbata}, bendra vertė ${(+saskaita) + (+arbata)}`);
 }
 
