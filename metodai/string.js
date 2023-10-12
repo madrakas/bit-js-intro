@@ -124,7 +124,7 @@ const kopustas = 'kopustas';
 console.log(kopustas.slice(1));
 console.log(kopustas.slice(-6));
 console.log(kopustas.slice(-3));
-console.log('----' + kopustas.slice(-6, -3));
+console.log('----' + kopustas.slice(1, -3));
 
 const pvz ="Labas rytas suraitytas";
 console.log(pvz.split('x')); // ['Labas rytas suraitytas']
@@ -151,7 +151,7 @@ console.log('Labas'.startsWith('Labs'));  //false
 console.log('Labas'.startsWith('Labas'));  //true
 console.log(''.startsWith(''));  //true
 
-console.clear();
+//console.clear();
 
 console.log('Vasara'.endsWith('x'));   //false
 console.log('Vasara'.endsWith('A'));   //false

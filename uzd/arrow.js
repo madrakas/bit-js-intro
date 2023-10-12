@@ -20,11 +20,6 @@ const skirtumas = function (a, b) {
 console.log(`${n1} - ${n2} = ${skirtumas(n1, n2)}`);
 
 
-// kam to reikia:
-
-let kaDaryti = null;
-/// ############# reikia užbaigti 
-
 
 //arrow function 
 const sandauga = (a, b) => {
@@ -68,9 +63,28 @@ console.log(pirmaRaide(''));
 
 function firstLetter(str){
     if (typeof str !== 'strin'){
-        return 'error first param has to be String';
+        return 'Error: first param has to be String';
     }
 
-    /// ######### reikia pabaigti
+    if(str.length === 0) {
+        return 'Error: first param must not be empty string value';
+    }
+
+    return str[0];
+    
 }
+
+const errors = {
+    notString:  'Error: first param has to be String',
+    empty:      'Error: first param must not be empty string value'
+}
+
+const firstLetter2 = str => typeof str !== 'string'
+    ? errors.notString
+    : str.length
+        ? str[0]
+        : errors.empty;
+
+
+
 

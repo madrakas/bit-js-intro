@@ -101,13 +101,14 @@ console.log(flowers);
 flowers.push('tulpe');
 console.log(flowers);
 
-flowers.pop();
-console.log(flowers);
+//flowers.pop();
+//console.log(flowers);
 
-flowers.push('tulpe');
+//flowers.push('tulpe');
+//console.log(flowers);
 console.log(flowers);
-
-flowers.shift('tulpe'); 
+console.log('----');
+flowers.unshift('a'); 
 console.log(flowers); // [ 'kardelis', 'roze', 'tulpe' ]  -> [ 'roze', 'tulpe' ]
 
 flowers.push('tulpe');
@@ -137,3 +138,4 @@ console.log((numbers25));
 numbers.splice(3, 3, 11, 12, 13, 14, 15); // [1, 2, 3, 4, 5, 6, 7, 8, 9] => [1, 2, 3, 11, 12, 13, 14, 15, 7, 8, 9]
 console.log(numbers); // nuo kur pradėti, kiek trint, elementai įterpimui nuo kur pradėjom
 
+numbers.splice()
