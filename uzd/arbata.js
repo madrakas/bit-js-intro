@@ -20,10 +20,11 @@ Bandymo duomenys:
 console.clear();
 
 function buhalteris (saskaita){
-    const arbata = saskaita >= 50 || saskaita <= 300 ? (saskaita * 15)/100 : (saskaita * 20)/100;
-    return (`Sąskaita buvo ${saskaita}, arbatpinigiai ${arbata}, bendra vertė ${(+saskaita) + (+arbata)}`);
+    const arbata = saskaita >= 50 && saskaita <= 300 ? (saskaita * 15)/100 : (saskaita * 20)/100;
+    return (`Sąskaita buvo ${saskaita}, arbatpinigiai ${arbata}, bendra vertė ${(+saskaita) + (arbata)}`);
 }
 
 console.log(buhalteris(275));
+console.log(buhalteris(300));
 console.log(buhalteris(41));
 console.log(buhalteris(25));

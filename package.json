@@ -16,8 +16,8 @@
     "number": "nodemon ./kintamieji/number.js",
     "string": "nodemon ./kintamieji/string.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw/040.js",
-    "uzd": "nodemon ./uzd/arbata.js"
+    "cw": "nodemon ./cw/047.js",
+    "uzd": "nodemon ./uzd/nd-10-14.js"
   },
   "keywords": [],
   "author": "Arvydas (https://github.com/madrakas)",
