@@ -1,5 +1,5 @@
 console.clear();
-//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+//1 .Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
 function actorNameLength(){
     const actorName = 'Jack';
     const actorSurname = 'Nicholson'
@@ -8,13 +8,13 @@ function actorNameLength(){
 //console.log(actorNameLength());
 
 
-//Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+//2. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
 //"Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
 function introduction(){
     const myName = 'Arvydas';
     const mySurname = 'Šimbelis';
-    const myBirthday = '1982-10-17';
-    const today = '2023-10-16';
+    const myBirthday = '1982-11-28';
+    const today = '2023-10-17';
 
     const myBirthdayArr = myBirthday.split('-');
     const todayArr = today.split('-');
@@ -40,7 +40,7 @@ function introduction(){
 }
 //console.log(introduction());
 
-//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+//3. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 function last3(str){
     console.log(str);
     let result = '';
@@ -49,7 +49,6 @@ function last3(str){
         result += str[str.length - 3 + i];
     }
     return result;
-
 }
 
 function actorNameLast3(){
@@ -61,7 +60,7 @@ function actorNameLast3(){
 //console.log(actorNameLast3());
 
 
-//Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+//4. Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. Jame visas “o” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 function hollywoodStars(){
     const str = 'Once upon a time in hollywood';
     const strLC = str.toLowerCase();
@@ -78,7 +77,7 @@ function hollywoodStars(){
 }
 //console.log(hollywoodStars());
 
-//Sukurkite keturis kintamuosius kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. 
+//5. Sukurkite keturis kintamuosius kuriems sugeneruokite atsitiktines reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. 
 
 function rand(min, max) {
     min = Math.ceil(min);
@@ -108,7 +107,7 @@ function random4(){
 }
 //console.log(random4());
 
-//Pasinaudokite atsitiktinio skaičiaus generavimo funkcija. Sukurkite du kintamuosius ir naudodamiesi funkcija jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+//6. Pasinaudokite atsitiktinio skaičiaus generavimo funkcija. Sukurkite du kintamuosius ir naudodamiesi funkcija jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
 function randomDivide(){
     const r1 = rand(0, 4);
     const r2 = rand(0, 4);
@@ -126,7 +125,7 @@ function randomDivide(){
 }
 //console.log(randomDivide());
 
-//Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę reikšmę.
+//7. Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite vidurinę reikšmę.
 function randMid(){
     const r1 = rand(0, 25);
     const r2 = rand(0, 25);
@@ -162,7 +161,7 @@ function randMid(){
 }
 //console.log(randMid());
 
-//Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+//8. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
 function actorNameFirst1(){
     const actorName = 'Jack';
     const actorSurname = 'Nicholson'
@@ -170,7 +169,7 @@ function actorNameFirst1(){
 }
 //console.log(actorNameFirst1());
 
-//Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai.
+//9. Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai.
 /* 
 console.log('a'.charCodeAt(0));
 console.log('z'.charCodeAt(0));
