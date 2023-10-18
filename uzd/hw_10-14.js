@@ -2,7 +2,7 @@ console.clear();
 //1 .Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
 function actorNameLength(){
     const actorName = 'Jack';
-    const actorSurname = 'Nicholson'
+    const actorSurname = 'Nicholson';
     return actorName.length > actorSurname.length ? actorName : actorSurname;
 }
 //console.log(actorNameLength());
@@ -185,7 +185,7 @@ function randomLCString(n){
     return result;
 }
 
-console.log(randomLCString(3));
+//console.log(randomLCString(3));
 
 
 
