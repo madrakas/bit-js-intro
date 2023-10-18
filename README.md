@@ -75,6 +75,7 @@ There is no tests for this project.
 ## 🎅 Authors
 
 Arvydas: [Github](https://github.com/madrakas)
+
 Sensei: Rimantas [Github](https://github.com/belauzas)
 
 ## ⚠️ License
