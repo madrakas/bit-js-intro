@@ -4,6 +4,8 @@
   "description": "",
   "main": "./kintamieji/index.js",
   "scripts": {
+    "class-ext": "nodemon ./funkcijos/class-extends.js",
+    "class": "nodemon ./klases/class.js",
     "met:array": "nodemon ./metodai/array.js", 
     "met:string": "nodemon ./metodai/string.js", 
     "met:number": "nodemon ./metodai/number.js", 
@@ -19,7 +21,7 @@
     "number": "nodemon ./kintamieji/number.js",
     "string": "nodemon ./kintamieji/string.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw/059.js",
+    "cw": "nodemon ./cw/061.js",
     "uzd": "nodemon ./uzd/hw_10-14.js"
   },
   "keywords": [],
