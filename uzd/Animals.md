@@ -7,7 +7,7 @@
         -   Cat
             -   constructor: name, color, legsCount, canFly, canSwim, canTalk
             -   methods: introduce, voice
-        - Bird
+    - Bird
         -   Parrot
             - constructor: name, featherColor, wingsCound, legsCount, canFly, canSwim, canTalk
             - methods: introduce, voice, repeatTwice
@@ -21,3 +21,6 @@
         -   Shark
             -   constructor: name, color, legsCount, canFly, canSwim, canTalk
             -   methods: introduce, voice, isHungry
+
+
+

@@ -1,0 +1,48 @@
+console.clear();
+class Pet {
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+
+    }
+}
+
+
+class Dog extends Pet{
+    constructor(name, color) {
+        super (name, color);
+        this.voice = 'Au au!';
+    }
+
+    hi() {
+        return `${this.color} dog says ${this.voice}`;
+    }
+}
+
+
+class Cat extends Pet {
+    constructor(color, name){
+        super(color, name);
+        this.voice = 'Miau maiu!';
+    }
+
+    hi() {
+        return `${this.color} cat says ${this.voice}`;
+    }
+}
+
+
+const dzekis =  new Dog ('Dzekis','Yellow');
+const rikis = new Dog('Rikis', 'Black');
+
+const murka = new Cat('Murka', 'White');
+const garfield = new Cat('Garfield', 'Orange');
+
+const animals = [dzekis, rikis, murka, garfield];
+console.log(animals);
+
+console.log(dzekis.hi());
+console.log(murka.hi());
+
+
+

@@ -23,7 +23,7 @@
     "destruct": "nodemon ./kintamieji/destruct.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cw": "nodemon ./cw/061.js",
-    "uzd": "nodemon ./uzd/hw_10-14.js"
+    "uzd": "nodemon ./uzd/Animals.js"
   },
   "keywords": [],
   "author": "Arvydas (https://github.com/madrakas)",
