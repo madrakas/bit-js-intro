@@ -9,6 +9,7 @@
     "met:array": "nodemon ./metodai/array.js", 
     "met:string": "nodemon ./metodai/string.js", 
     "met:number": "nodemon ./metodai/number.js", 
+    "met:spread": "nodemon ./metodai/spread.js", 
     "object-loops": "nodemon ./loops/object-loops.js",
     "array-loops": "nodemon ./loops/array-loops.js",
     "loops": "nodemon ./loops/loops.js",
