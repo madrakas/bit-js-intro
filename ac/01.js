@@ -1,6 +1,6 @@
 console.clear();
 
-const input=`eight9fhstbssrplmdlncmmqqnklb39ninejz
+let input=`eight9fhstbssrplmdlncmmqqnklb39ninejz
 three656
 ppjvndvknbtpfsncplmhhrlh5
 7fjqhrhsevenlbtwoninevnmct2
@@ -999,11 +999,131 @@ five8dvdjqfmpnh3
 scjjr4twoh
 nine35gzmlt
 5sixfour2qxsqkpnq
-kdkjqdkvgs2a`;
+kdkjqdkvgs2`;
 
 const whitelist='123456789';
 
+
+/* 
+input= input.replaceAll('one', '1');
+input= input.replaceAll('two', '2');
+input= input.replaceAll('three', '3');
+input= input.replaceAll('four', '4');
+input= input.replaceAll('five', '5');
+input= input.replaceAll('six', '6');
+input= input.replaceAll('seven', '7');
+input= input.replaceAll('eight', '8');
+input= input.replaceAll('nine', '9');
+
+ */
+
+
 const rows = input.split('\n');
+
+const robj={
+    
+}
+
+
+
+rows.forEach((r, ridx) =>{
+    robj[ridx]={first: '', last: ''} 
+    
+    let tmpstr='';
+    r.split('').forEach(s => {
+
+        if(robj[ridx]['first'].length === 0){
+            tmpstr += s; 
+            if ((tmpstr.includes('1')) || (tmpstr.includes('one'))){
+                robj[ridx]['first'] += '1';      
+            } 
+            if ((tmpstr.includes('2')) || (tmpstr.includes('two'))){
+                robj[ridx]['first'] += '2';      
+            } 
+            if ((tmpstr.includes('3')) || (tmpstr.includes('three'))){
+                robj[ridx]['first'] += '3';      
+            } 
+            if ((tmpstr.includes('4')) || (tmpstr.includes('four'))){
+                robj[ridx]['first'] += '4';      
+            } 
+            if ((tmpstr.includes('5')) || (tmpstr.includes('five'))){
+                robj[ridx]['first'] += '5';      
+            } 
+            if ((tmpstr.includes('6')) || (tmpstr.includes('six'))){
+                robj[ridx]['first'] += '6';      
+            } 
+            if ((tmpstr.includes('7')) || (tmpstr.includes('seven'))){
+                robj[ridx]['first'] += '7';      
+            } 
+            if ((tmpstr.includes('8')) || (tmpstr.includes('eight'))){
+                robj[ridx]['first'] += '8';      
+            } 
+            if ((tmpstr.includes('9')) || (tmpstr.includes('nine'))){
+                robj[ridx]['first'] += '9';      
+            } 
+        }
+        
+    })
+});
+
+
+
+rows.forEach((r, ridx) =>{
+    
+    
+    let tmpstr='';
+    r.split('').reverse().forEach(s => {
+
+        if(robj[ridx]['last'].length === 0){
+            tmpstr += s; 
+            if ((tmpstr.includes('1')) || (tmpstr.includes('eno'))){
+                robj[ridx]['last'] += '1';      
+            } 
+            if ((tmpstr.includes('2')) || (tmpstr.includes('owt'))){
+                robj[ridx]['last'] += '2';      
+            } 
+            if ((tmpstr.includes('3')) || (tmpstr.includes('eerht'))){
+                robj[ridx]['last'] += '3';      
+            } 
+            if ((tmpstr.includes('4')) || (tmpstr.includes('ruof'))){
+                robj[ridx]['last'] += '4';      
+            } 
+            if ((tmpstr.includes('5')) || (tmpstr.includes('evif'))){
+                robj[ridx]['last'] += '5';      
+            } 
+            if ((tmpstr.includes('6')) || (tmpstr.includes('xis'))){
+                robj[ridx]['last'] += '6';      
+            } 
+            if ((tmpstr.includes('7')) || (tmpstr.includes('neves'))){
+                robj[ridx]['last'] += '7';      
+            } 
+            if ((tmpstr.includes('8')) || (tmpstr.includes('thgie'))){
+                robj[ridx]['last'] += '8';      
+            } 
+            if ((tmpstr.includes('9')) || (tmpstr.includes('enin'))){
+                robj[ridx]['last'] += '9';      
+            } 
+        }
+        
+    })
+});
+
+let xsum = 0;
+rows.forEach((r, ridx) =>{
+    xsum += parseInt(robj[ridx]['first'] + (robj[ridx]['last']));
+    
+    
+})
+
+// console.log(robj);
+console.log(xsum);
+
+rows.forEach(r =>{
+    // console.log(r, );
+})
+
+// rows.forEach(r  =>(console.log(r)));
+
 const calibrationLog = [];
 
 let result = 0;
@@ -1013,4 +1133,4 @@ calibrationLog.forEach(a => (result += parseInt(a)));
 
 
 
-console.log(result);
+// console.log(result);
