@@ -23,9 +23,9 @@
     "string": "nodemon ./kintamieji/string.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw/075.js",
+    "cw": "nodemon ./cw/077.js",
     "uzd": "nodemon ./uzd/testas-sprendimas.js",
-    "aoc": "nodemon ./aoc/04_2.js"
+    "aoc": "nodemon ./aoc/06.js"
   },
   "keywords": [],
   "author": "Arvydas (https://github.com/madrakas)",
