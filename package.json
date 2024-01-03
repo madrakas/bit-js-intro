@@ -6,24 +6,24 @@
   "scripts": {
     "class-ext": "nodemon ./funkcijos/class-extends.js",
     "class": "nodemon ./klases/class.js",
-    "met:array": "nodemon ./metodai/array.js", 
-    "met:string": "nodemon ./metodai/string.js", 
-    "met:number": "nodemon ./metodai/number.js", 
-    "met:spread": "nodemon ./metodai/spread.js", 
+    "met:array": "nodemon ./metodai/array.js",
+    "met:string": "nodemon ./metodai/string.js",
+    "met:number": "nodemon ./metodai/number.js",
+    "met:spread": "nodemon ./metodai/spread.js",
     "object-loops": "nodemon ./loops/object-loops.js",
     "array-loops": "nodemon ./loops/array-loops.js",
     "loops": "nodemon ./loops/loops.js",
     "for": "nodemon ./loops/for.js",
     "if": "nodemon ./palyginimas/if.js",
-    "function" : "nodemon ./funkcijos/function.js",
-    "object" : "nodemon ./kintamieji/object.js",
+    "function": "nodemon ./funkcijos/function.js",
+    "object": "nodemon ./kintamieji/object.js",
     "array": "nodemon ./kintamieji/array.js",
     "boolean": "nodemon ./kintamieji/boolean.js",
     "number": "nodemon ./kintamieji/number.js",
     "string": "nodemon ./kintamieji/string.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw/095.js",
+    "cw": "nodemon ./cw/098.js",
     "uzd": "nodemon ./uzd/testas-sprendimas.js",
     "aoc": "nodemon ./aoc/08.js"
   },
@@ -31,6 +31,6 @@
   "author": "Arvydas (https://github.com/madrakas)",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.2"
   }
 }
