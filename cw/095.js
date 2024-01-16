@@ -15,7 +15,7 @@ function nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMon
         savings += savingperMonth;
         availability = savings + priceOld - priceNew;
         console.log(months, savings, availability, percentLossByMonth);
-        months++
+        months++;
     }
     return [months, +availability.toFixed(0)];
 }
