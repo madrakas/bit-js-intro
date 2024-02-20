@@ -23,7 +23,7 @@
     "string": "nodemon ./kintamieji/string.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw100-150/116.js",
+    "cw": "nodemon ./cw100-150/118.js",
     "uzd": "nodemon ./uzd/testas-sprendimas.js",
     "aoc": "nodemon ./aoc/08.js"
   },
