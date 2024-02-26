@@ -17,7 +17,7 @@ This is the first part of the course – General programming skills and introduc
 
 ## 🧭 Other repositories from same  course
 1. General programming skils and JS (Current repository)
-2. item two
+2. [Intro to HTML and CSS](https://github.com/madrakas/bit_02_Intro_to_HTML/)
 3. item three
 4. item four
 
