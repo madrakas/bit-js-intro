@@ -4,34 +4,39 @@
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# bit-js-intro
+# BIT Full stack developer course – Part 1. General programming skils and JS.
 
-_first steps into JS world_
+_My journey to become a full stack developer_
 
 <br>
 
 ## 🌟 About
 
-This is part of my workbook from Full stack dev course at [BIT](https://bit.lt/)
+This is a part of my workbook from Full stack developers course at [BIT](https://bit.lt/)
+This is the first part of the course – General programming skills and introduction to Java Script.
 
+## 🧭 Other repositories from same  course
+1. General programming skils and JS (Current repository)
+2. item two
+3. item three
+4. item four
 
 ## 🎯 Project features/goals
 
 - Introduction to opertators and programing logic
 - introduction to git and github
-- developing enviroment setup
+- setting up delvelopment enviroment
 - JS variables
 - JS functions
 - JS cycles
 - JS methods
-
+  
 ## 🧰 Getting Started
 Topics and subtopics are sorted by folders and files.
 
-Folder 'cw' contains some of the [CodeWars](https://www.codewars.
-com/users/madrakas) challenges solved in the learning process.
+Folders starting with 'cw' contains some of the [CodeWars](https://www.codewars.com/users/madrakas) challenges I have solved. I keep solving and adding them here even after course is finished.
 
-folder 'uzd' contains practices made during online classes.
+Folder 'uzd' contains practices made during online classes.
 
 ### 💻 Prerequisites
 
