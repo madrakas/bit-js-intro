@@ -68,7 +68,7 @@ Would like to run this project locally? Open terminal and follow these steps:
     ```sh
     npm install
     ```
-3. Run the one of the scripts fron package.json file
+3. Run the one of the scripts from package.json file
     ```sh
     npm run string
     ```
