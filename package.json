@@ -23,7 +23,7 @@
     "string": "nodemon ./kintamieji/string.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cw": "nodemon ./cw100-150/118.js",
+    "cw": "nodemon ./cw100-150/119.js",
     "uzd": "nodemon ./uzd/testas-sprendimas.js",
     "aoc": "nodemon ./aoc/08.js"
   },
@@ -31,6 +31,6 @@
   "author": "Arvydas (https://github.com/madrakas)",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.3"
   }
 }
