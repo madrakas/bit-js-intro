@@ -1,6 +1,24 @@
 console.clear();
 
 <<<<<<< HEAD
+function bmi(weight, height) {
+    const bmi = (weight / (height * height)).toFixed(2);
+    console.log(bmi);
+    switch (true) {
+        case bmi < 18.5:
+            return "Underweight";
+        case 18.5 <= bmi && bmi < 25:
+            return "Normal";
+        case 25 <= bmi && bmi < 30:
+            return "Overweight";
+        case 30 <= bmi:
+            return "Obese";
+    }
+}
+
+console.log(bmi(80, 1.80), "Normal");
+=======
+<<<<<<< HEAD
 function streetFighterSelection(fighters, position, moves){
     const maxY = fighters.length - 1;
     const result = [];
@@ -75,3 +93,4 @@ console.log(kebabize('MyCamelHas3Humps'), 'my-camel-has-humps');
 // console.log(kebabize('AbstractSingletonProxyFactoryBean'), 'abstract-singleton-proxy-factory-bean');
 // console.log(kebabize('abstractSingletonProxyFactoryBean'), 'abstract-singleton-proxy-factory-bean');
 >>>>>>> 64c38eaaa93b06a08931e5daa38460bdd4ff9e22
+>>>>>>> 9c2b3d6049b95fe24e195e3bdbd5734c8c7ba804
