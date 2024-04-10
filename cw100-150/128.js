@@ -1,23 +1,31 @@
-const orderedCount = function (text) {
+console.clear();
 
-    if ((typeof(text) !== 'string') || (text.length === 0)) {
-        return [];
+function pascalsTriangle(n) {
+    const resultArr = [];
+
+    for (let i = 0; i < n; i++) {
+        console.log('level' + i);
+        if (i === 0) {
+            resultArr.push([1]);
+        } 
+
+        if (i === 1) {
+            resultArr.push([1,1]);
+        }
+
+        if (i > 1) {
+            const tempArr = [1];
+            for (let j = 0; j < resultArr[i - 1].length - 1; j++) {
+                tempArr.push(resultArr[i - 1][j] + resultArr[i - 1][j + 1]);
+            }
+            tempArr.push(1);
+            resultArr.push(tempArr);
+        }
     }
-    
-    const symbolsObj = {};
-    const result = [];
 
-    const textArr = '' + text.split('').forEach(element => {
-        symbolsObj[element] = symbolsObj[element] + 1 || 1;
-    });
+    //flatten array 
+    return resultArr.flat();
+}
 
-    text.split('').filter((value, index, self) => self.indexOf(value) === index).forEach(key =>{
-        result.push([key, symbolsObj[key]]);
-    });
-        
-    return result;
-  }
+console.log(pascalsTriangle(4), [1,1,1,1,2,1,1,3,3,1],"4 level triangle incorrect");
 
-  console.log(orderedCount("abracadabra"), [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]]);
-//   console.log(["Code Wars",  [['C', 1], ['o', 1], ['d', 1], ['e', 1], [' ', 1], ['W', 1], ['a', 1], ['r', 1], ['s', 1]]]);
-//   console.log(["233312", [['2', 2], ['3', 3], ['1', 1 ]]]);
